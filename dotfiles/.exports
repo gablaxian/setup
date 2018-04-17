@@ -1,0 +1,24 @@
+# Change the default editor (textmate/atom/code - whatever you like)
+export EDITOR='atom -w'
+
+# Larger bash history (allow 32³ entries; default is 500)
+export HISTSIZE=32768
+export HISTFILESIZE=$HISTSIZE
+export HISTCONTROL=ignoredups
+# Make some commands not show up in history
+export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
+
+# use UTF-8
+export LC_ALL="en_US.UTF-8"
+
+# Highlight section titles in manual pages
+export LESS_TERMCAP_md="$ORANGE"
+
+# Always enable colored `grep` output
+export GREP_OPTIONS="--color=auto"
+
+# Shortcut to homebrew prefix
+export HOMEBREW_PREFIX=$(brew --prefix)
+
+# Change node path for Homebrew installed node
+export NODE_PATH="/usr/local/lib/node"
